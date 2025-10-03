@@ -478,7 +478,6 @@ body {
     height: 120px;
     border-radius: 20px;
     margin-bottom: 1.5rem;
-    border: 3px solid rgba(255, 255, 255, 0.2);
     background: transparent;
     filter: invert(1);
 }
