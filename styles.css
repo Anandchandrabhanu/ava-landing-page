@@ -131,15 +131,6 @@ body {
     margin-bottom: 3rem;
 }
 
-.brand-logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    border: 3px solid rgba(255, 255, 255, 0.2);
-}
 
 .brand-name {
     font-size: 3rem;
@@ -466,3 +457,85 @@ body {
 .coming-soon-content > *:nth-child(4) { animation-delay: 0.4s; }
 .coming-soon-content > *:nth-child(5) { animation-delay: 0.5s; }
 .coming-soon-content > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Index Page Styles */
+.index-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.index-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.index-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    filter: invert(1);
+}
+
+.index-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.index-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.index-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.index-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+
+.index-btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.index-btn-secondary:hover {
+    background: white;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .index-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .index-content {
+        padding: 1rem;
+    }
+    
+    .index-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
